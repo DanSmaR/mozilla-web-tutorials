@@ -1,0 +1,74 @@
+/* General styles */
+
+html /* Especificity 0,0,0,1 */ {
+    font-family: 'Helvetica neue', Arial, 'sans-serif';
+    font-size: 10px;
+    background-color: #cccccc;
+}
+
+body /* Especificity 0,0,0,1 */ {
+    margin: 0;
+}
+
+/* card setup */
+
+.card /* Especificity 0,0,1,0 */ {
+    width: 35em;
+    height: 22em;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    margin: 5em auto;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+}
+
+/* Header and footer */
+
+.card footer /* Especificity 0,0,1,1 */ {
+    background-image: linear-gradient(to bottom, rgba(190, 0, 0, 0.8), rgba(243, 146, 146, 0.2));
+    border-radius: 0em 0em 1.5em 1.5em;
+}
+
+.card header /* Especificity 0,0,1,1 */{
+    background-image: linear-gradient(to bottom, rgba(243, 146, 146, 0.2), rgba(190, 0, 0, 0.8));
+    border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.card header,
+.card footer {
+    box-sizing: border-box;
+    height: 5em;
+    padding: 1em;
+}
+
+.card header h2 {
+    font-size: 2em;
+    line-height: 1.75em;
+}
+
+.card footer p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+/* Main body of the card (article) */
+
+.card article p {
+    padding: 1em 1em;
+    font-size: 1.2em;
+    color: seashell;
+}
+
+.card article img /* Especificity 0,0,1,2 */ {
+    max-height: 100%;
+    float: right;    
+}
+
+.card article {
+    height: 12em;
+    background-color: rgba(66, 0, 0, 0.7);
+}

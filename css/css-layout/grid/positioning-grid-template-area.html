@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Positioning with grid template area</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+            ;
+        }
+
+        header,
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+        }
+
+        aside {
+            border-right: 1px solid #999;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        article {
+            grid-area: content;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>This is my lovely blog</header>
+        <article>
+            <h1>My article</h1>
+            <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw
+                Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit
+                to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
+            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that
+                show to the people who make shows, and on the strength of that one show they decide if they're going to
+                make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She
+                starred in one of the ones that became nothing.</p>
+        </article>
+        <aside>
+            <h2>Other things</h2>
+            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
+                evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley
+                of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
+                down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My
+                brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+        </aside>
+        <footer>Contact me@mysite.com</footer>
+    </div>
+</body>
+
+</html>
