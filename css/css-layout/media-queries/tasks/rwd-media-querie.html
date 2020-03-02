@@ -96,10 +96,18 @@
                 margin: auto;
                 border: none;
             }
-
-            header ul {
+            /* positioning of the ul element (nav children) in the center position. Below there are 2 ways of doing so*/
+            
+            /* header ul {
                 position: relative;
                 top: 25%;
+            }*/
+
+            /* This is another solution, using nested flexbox */
+
+            header nav {
+                display: flex;
+                align-items: center;
             }
         }
 
