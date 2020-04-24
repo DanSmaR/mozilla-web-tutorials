@@ -11,7 +11,9 @@ img {
 }
 
 .page__nav {
-    padding: .5em;
+    padding: .5em 4em;
+    position: sticky;
+    top: 0;
 }
 
     .page__nav--black {
@@ -22,7 +24,6 @@ img {
         color: #ffffff;
         text-decoration: none;
         padding: .5em 1em;
-        text-align: center;
         display: block;
         margin: 0;
         padding: 0;
@@ -56,11 +57,7 @@ img {
 .nav__items.l-flex__row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-}
-
-.nav__items.l-flex__row > * {
-    flex: 1 1 auto;
+    justify-content: space-between;
 }
 
 .side__photos {
