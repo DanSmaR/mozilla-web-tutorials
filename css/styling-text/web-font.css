@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'josefin_slabregular';
-    src: url('josefinslab-regular-webfont.woff2') format('woff2'),
-         url('josefinslab-regular-webfont.woff') format('woff');
+    src: url('fonts/josefinslab-regular-webfont.woff2') format('woff2'),
+         url('fonts/josefinslab-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'croissant_oneregular';
-    src: url('croissantone-regular-webfont.woff2') format('woff2'),
-         url('croissantone-regular-webfont.woff') format('woff');
+    src: url('fonts/croissantone-regular-webfont.woff2') format('woff2'),
+         url('fonts/croissantone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -47,7 +47,13 @@ h2 {
     font-size: 2.4rem;
 }
 
+h1,
+h2 {
+    font-family: 'croissant_oneregular';
+}
+
 p {
+    font-family: 'josefin_slabregular';
     font-size: 2.4rem;
     line-height: 1.6;
     word-spacing: 0.6rem;
