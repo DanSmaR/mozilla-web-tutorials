@@ -157,8 +157,23 @@ aside li {
 
 section ul li {
     padding-left: 2rem;
-    background-image: url(images/brain-64.png);
     background-position: 0 45%;
     background-size: 1.6rem 1.6rem;
     background-repeat: no-repeat
+}
+
+section ul:first-of-type li {
+    background-image: url(images/brain-64.png);
+}
+
+section ul:nth-of-type(2) li:nth-of-type(1) {
+    background-image: url(images/call-64.png);
+}
+
+section ul:nth-of-type(2) li:nth-of-type(2) {
+    background-image: url(images/ask-16.png);
+}
+
+section ul:nth-of-type(2) li:nth-of-type(3) {
+    background-image: url(images/schedule-16.png);
 }
