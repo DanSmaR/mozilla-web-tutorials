@@ -177,3 +177,38 @@ section ul:nth-of-type(2) li:nth-of-type(2) {
 section ul:nth-of-type(2) li:nth-of-type(3) {
     background-image: url(images/schedule-16.png);
 }
+
+
+
+
+
+/* nav menu */
+
+nav ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+}
+
+nav li {
+    margin-bottom: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+    color: #ffffff;
+    background-color: #a66;
+}
+
+nav li a:active {
+    color: #ffffff;
+    background-color: #000000;
+}
